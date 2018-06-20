@@ -12,7 +12,7 @@ module.exports = {
         contentBase: './public',
     },
     resolve: {
-        extensios: ['', '.js', '.jsx'],
+        extensions: ['', '.js', '.jsx'],
         alias: {
             modules: __dirname +  '/node_modules',
             jquery: 'modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js',
@@ -29,7 +29,7 @@ module.exports = {
     ],
     module: {
         loaders: [{
-            test: /\.js[x]?$/,
+            test: /.js[x]?$/,
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
